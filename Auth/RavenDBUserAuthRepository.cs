@@ -9,7 +9,7 @@ using ServiceStack.ServiceInterface.Auth;
 
 namespace Auth
 {
-    public class RavenDBUserAuthRepository
+    public class RavenDBUserAuthRepository : IUserAuthRepository
     {
         //http://stackoverflow.com/questions/3588623/c-sharp-regex-for-a-username-with-a-few-restrictions
         public Regex ValidUserNameRegEx = new Regex(@"^(?=.{3,15}$)([A-Za-z0-9][._-]?)*$", RegexOptions.Compiled);
